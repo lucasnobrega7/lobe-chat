@@ -1,51 +1,23 @@
-# Gitignore for LobeHub
-################################################################
-
-# general
-.DS_Store
-.idea
-.vscode
-.history
-.temp
-.env.local
-venv
-temp
-tmp
-.windsurfrules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
-*.log
-*.lock
-package-lock.json
+/node_modules
 
-# ci
-coverage
-.coverage
-.eslintcache
-.stylelintcache
+# next.js
+/.next/
+/out/
 
 # production
-dist
-es
-lib
-logs
-test-output
+/build
 
-# umi
-.umi
-.umi-production
-.umi-test
-.dumi/tmp*
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# husky
-.husky/prepare-commit-msg
-
-# misc
-# add other ignore file below
-
-# local env files
-.env*.local
+# env files
+.env*
 
 # vercel
 .vercel
@@ -53,21 +25,3 @@ test-output
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.next
-.env
-public/*.js
-public/sitemap.xml
-public/sitemap-index.xml
-bun.lockb
-sitemap*.xml
-robots.txt
-
-# Serwist
-public/sw*
-public/swe-worker*
-
-*.patch
-*.pdf
-vertex-ai-key.json
-.pnpm-store
-./packages/lobe-ui
